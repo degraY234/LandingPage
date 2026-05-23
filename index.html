@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tama Rent Car And Travel - Layanan rental mobil premium di Medan Marelan. Armada mewah, harga terjangkau, pelayanan terpercaya.">
+    <title>Tama Rent Car And Travel | Rental Mobil Premium Medan</title>
+
+    <!-- ===== FONT AWESOME CDN (Icons) ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- ===== STYLESHEET UTAMA ===== -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================================================
+         KOMPONEN 1: NAVBAR / HEADER
+         Navbar transparan yang berubah solid saat di-scroll
+    ============================================================ -->
+    <header id="navbar" class="navbar">
+        <div class="container navbar-inner">
+
+            <!-- Logo Brand -->
+            <a href="#" class="navbar-logo">
+                <i class="fa-solid fa-car-side logo-icon"></i>
+                <span class="logo-text">Tama<span class="logo-accent">RentCar</span></span>
+            </a>
+
+            <!-- Navigasi Desktop -->
+            <nav class="navbar-nav" id="navMenu">
+                <a href="#fitur" class="nav-link">Keunggulan</a>
+                <a href="#armada" class="nav-link">Armada</a>
+                <a href="#footer" class="nav-link">Lokasi</a>
+            </nav>
+
+            <!-- Tombol CTA Navbar -->
+            <a href="https://wa.me/6281263162487?text=Halo%20Tama%20Rent%20Car%2C%20saya%20ingin%20bertanya%20mengenai%20layanan%20rental." 
+               target="_blank" 
+               class="btn btn-gold navbar-cta">
+                <i class="fa-brands fa-whatsapp"></i>
+                Hubungi Kami
+            </a>
+
+            <!-- Tombol Hamburger (Mobile) -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- ============================================================
+         KOMPONEN 2: HERO SECTION
+         Spanduk utama yang luas dengan CTA utama
+    ============================================================ -->
+    <section class="hero" id="home">
+
+        <!-- Overlay gelap di atas background -->
+        <div class="hero-overlay"></div>
+
+        <!-- Partikel dekoratif (dibuat via CSS) -->
+        <div class="hero-particles">
+            <span class="particle p1"></span>
+            <span class="particle p2"></span>
+            <span class="particle p3"></span>
+        </div>
+
+        <div class="container hero-content">
+
+            <!-- Badge atas -->
+            <div class="hero-badge">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Terpercaya & Berlisensi Resmi</span>
+            </div>
+
+            <!-- Headline utama -->
+            <h1 class="hero-title">
+                Perjalanan Nyaman,<br>
+                <span class="text-gradient">Kesan Mewah</span><br>
+                Harga Terjangkau
+            </h1>
+
+            <!-- Sub-headline -->
+            <p class="hero-subtitle">
+                Nikmati pengalaman berkendara premium bersama armada terbaik kami. 
+                Melayani sewa harian, mingguan, dan perjalanan wisata di Medan & sekitarnya.
+            </p>
+
+            <!-- Tombol CTA -->
+            <div class="hero-buttons">
+
+                <!-- Tombol Utama WhatsApp -->
+                <a href="https://wa.me/6281263162487?text=Halo%20Tama%20Rent%20Car%2C%20saya%20ingin%20memesan%20unit%20kendaraan." 
+                   target="_blank" 
+                   class="btn btn-whatsapp btn-lg">
+                    <i class="fa-brands fa-whatsapp btn-icon-pulse"></i>
+                    Pesan Unit (WhatsApp)
+                </a>
+
+                <!-- Tombol Sekunder -->
+                <a href="#armada" class="btn btn-outline btn-lg">
+                    <i class="fa-solid fa-car"></i>
+                    Lihat Armada
+                </a>
+
+            </div>
+
+            <!-- Statistik kecil -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Pelanggan Puas</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Tahun Pengalaman</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Layanan Siap</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Ikon panah scroll ke bawah -->
+        <a href="#fitur" class="scroll-down-arrow">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+    </section>
+
+
+    <!-- ============================================================
+         KOMPONEN 3: FITUR / KEUNGGULAN
+         Grid 3 kolom dengan efek kartu hover
+    ============================================================ -->
+    <section class="section features" id="fitur">
+        <div class="container">
+
+            <!-- Judul Seksi -->
+            <div class="section-header">
+                <span class="section-label">Mengapa Memilih Kami</span>
+                <h2 class="section-title">Keunggulan <span class="text-gradient">Tama Rent Car</span></h2>
+                <p class="section-subtitle">Kami hadir dengan komitmen memberikan layanan rental terbaik yang aman, nyaman, dan profesional.</p>
+            </div>
+
+            <!-- Grid Keunggulan -->
+            <div class="features-grid">
+
+                <!-- Kartu Fitur 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-car feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">Armada Premium</h3>
+                    <p class="feature-desc">Kendaraan terawat, bersih, dan nyaman. Selalu dalam kondisi prima siap mengantarkan Anda ke tujuan.</p>
+                    <div class="feature-glow"></div>
+                </div>
+
+                <!-- Kartu Fitur 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-user-tie feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">Driver Profesional</h3>
+                    <p class="feature-desc">Pengemudi berpengalaman, hafal rute, sopan, dan siap menemani perjalanan jauh Anda dengan selamat.</p>
+                    <div class="feature-glow"></div>
+                </div>
+
+                <!-- Kartu Fitur 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-shield-halved feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">Asuransi Lengkap</h3>
+                    <p class="feature-desc">Setiap perjalanan terlindungi asuransi resmi. Anda tenang, kami bertanggung jawab penuh atas keselamatan.</p>
+                    <div class="feature-glow"></div>
+                </div>
+
+                <!-- Kartu Fitur 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-location-dot feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">Jemput & Antar</h3>
+                    <p class="feature-desc">Layanan antar-jemput langsung ke rumah atau bandara Anda. Tidak perlu repot ke lokasi kami.</p>
+                    <div class="feature-glow"></div>
+                </div>
+
+                <!-- Kartu Fitur 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-clock feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">Booking Mudah 24 Jam</h3>
+                    <p class="feature-desc">Pesan kapan saja, siang atau malam, langsung via WhatsApp. Konfirmasi cepat dalam hitungan menit.</p>
+                    <div class="feature-glow"></div>
+                </div>
+
+                <!-- Kartu Fitur 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">
+                        <i class="fa-solid fa-tag feature-icon"></i>
+                    </div>
+                    <h3 class="feature-title">Harga Transparan</h3>
+                    <p class="feature-desc">Tidak ada biaya tersembunyi. Harga yang kami tawarkan adalah harga final, jujur, dan kompetitif.</p>
+                    <div class="feature-glow"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         KOMPONEN 4: KATALOG ARMADA
+         Grid kartu mobil dengan filter dan tombol WhatsApp dinamis
+    ============================================================ -->
+    <section class="section armada" id="armada">
+        <div class="container">
+
+            <!-- Judul Seksi -->
+            <div class="section-header">
+                <span class="section-label">Pilihan Kendaraan Kami</span>
+                <h2 class="section-title">Katalog <span class="text-gradient">Armada Unggulan</span></h2>
+                <p class="section-subtitle">Pilih kendaraan sesuai kebutuhan dan anggaran Anda. Semua sudah termasuk BBM & driver berpengalaman.</p>
+            </div>
+
+            <!-- ===== FILTER TOMBOL ===== -->
+            <!-- JavaScript akan menangani logika filter ini -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="semua">
+                    <i class="fa-solid fa-border-all"></i> Semua
+                </button>
+                <button class="filter-btn" data-filter="keluarga">
+                    <i class="fa-solid fa-users"></i> Mobil Keluarga
+                </button>
+                <button class="filter-btn" data-filter="vip">
+                    <i class="fa-solid fa-crown"></i> VIP
+                </button>
+            </div>
+
+            <!-- ===== GRID KARTU ARMADA ===== -->
+            <div class="armada-grid" id="armadaGrid">
+
+                <!-- Kartu 1: Avanza Facelift -->
+                <!-- data-kategori digunakan JS untuk filter -->
+                <div class="car-card" data-kategori="keluarga" data-nama="Toyota Avanza Facelift">
+
+                    <!-- Pembungkus Gambar Estetik -->
+                    <div class="car-image-wrap">
+                        <!-- Placeholder gambar dengan ikon -->
+                        <div class="car-image-placeholder">
+                            <i class="fa-solid fa-car car-img-icon"></i>
+                            <span class="car-img-label">Avanza Facelift</span>
+                        </div>
+                        <!-- Badge Status -->
+                        <span class="car-badge badge-available">
+                            <i class="fa-solid fa-circle-check"></i> Tersedia
+                        </span>
+                        <!-- Badge Kategori -->
+                        <span class="car-category-tag">Mobil Keluarga</span>
+                    </div>
+
+                    <!-- Konten Kartu -->
+                    <div class="car-content">
+                        <h3 class="car-name">Toyota Avanza Facelift</h3>
+                        <p class="car-tagline">Kenyamanan maksimal untuk keluarga</p>
+
+                        <!-- Spesifikasi Mini -->
+                        <ul class="car-specs">
+                            <li><i class="fa-solid fa-users"></i> 7 Penumpang</li>
+                            <li><i class="fa-solid fa-gear"></i> Matic/Manual</li>
+                            <li><i class="fa-solid fa-snowflake"></i> Full AC</li>
+                            <li><i class="fa-solid fa-gas-pump"></i> Sudah BBM</li>
+                        </ul>
+
+                        <!-- Harga -->
+                        <div class="car-price-wrap">
+                            <span class="car-price-label">Mulai dari</span>
+                            <div class="car-price">
+                                <span class="price-amount">Rp 350.000</span>
+                                <span class="price-unit">/ hari</span>
+                            </div>
+                        </div>
+
+                        <!-- Tombol Sewa (JavaScript menangani link WhatsApp dinamis) -->
+                        <button class="btn btn-gold btn-full sewa-btn" 
+                                data-nama="Toyota Avanza Facelift"
+                                data-harga="Rp 350.000/hari"
+                                onclick="sewaMobil(this)">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Sewa Sekarang
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Kartu 2: Innova Zenix -->
+                <div class="car-card featured" data-kategori="keluarga" data-nama="Toyota Innova Zenix">
+
+                    <!-- Badge Terpopuler (hanya kartu ini) -->
+                    <div class="card-popular-ribbon">
+                        <i class="fa-solid fa-fire"></i> Terpopuler
+                    </div>
+
+                    <div class="car-image-wrap">
+                        <div class="car-image-placeholder innova-bg">
+                            <i class="fa-solid fa-van-shuttle car-img-icon"></i>
+                            <span class="car-img-label">Innova Zenix</span>
+                        </div>
+                        <span class="car-badge badge-available">
+                            <i class="fa-solid fa-circle-check"></i> Tersedia
+                        </span>
+                        <span class="car-category-tag">Mobil Keluarga</span>
+                    </div>
+
+                    <div class="car-content">
+                        <h3 class="car-name">Toyota Innova Zenix</h3>
+                        <p class="car-tagline">Performa tangguh, kabin lapang premium</p>
+
+                        <ul class="car-specs">
+                            <li><i class="fa-solid fa-users"></i> 7 Penumpang</li>
+                            <li><i class="fa-solid fa-gear"></i> Matic CVT</li>
+                            <li><i class="fa-solid fa-snowflake"></i> Dual AC</li>
+                            <li><i class="fa-solid fa-gas-pump"></i> Sudah BBM</li>
+                        </ul>
+
+                        <div class="car-price-wrap">
+                            <span class="car-price-label">Mulai dari</span>
+                            <div class="car-price">
+                                <span class="price-amount">Rp 550.000</span>
+                                <span class="price-unit">/ hari</span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-gold btn-full sewa-btn" 
+                                data-nama="Toyota Innova Zenix"
+                                data-harga="Rp 550.000/hari"
+                                onclick="sewaMobil(this)">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Sewa Sekarang
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Kartu 3: Alphard VIP -->
+                <div class="car-card" data-kategori="vip" data-nama="Toyota Alphard VIP">
+
+                    <div class="car-image-wrap">
+                        <div class="car-image-placeholder alphard-bg">
+                            <i class="fa-solid fa-car-side car-img-icon"></i>
+                            <span class="car-img-label">Alphard VIP</span>
+                        </div>
+                        <span class="car-badge badge-available">
+                            <i class="fa-solid fa-circle-check"></i> Tersedia
+                        </span>
+                        <span class="car-category-tag tag-vip">VIP</span>
+                    </div>
+
+                    <div class="car-content">
+                        <h3 class="car-name">Toyota Alphard VIP</h3>
+                        <p class="car-tagline">Kemewahan sejati untuk perjalanan eksklusif</p>
+
+                        <ul class="car-specs">
+                            <li><i class="fa-solid fa-users"></i> 6 Penumpang</li>
+                            <li><i class="fa-solid fa-gear"></i> Matic Premium</li>
+                            <li><i class="fa-solid fa-snowflake"></i> Climate Control</li>
+                            <li><i class="fa-solid fa-gas-pump"></i> Sudah BBM</li>
+                        </ul>
+
+                        <div class="car-price-wrap">
+                            <span class="car-price-label">Mulai dari</span>
+                            <div class="car-price">
+                                <span class="price-amount">Rp 1.200.000</span>
+                                <span class="price-unit">/ hari</span>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-gold btn-full sewa-btn" 
+                                data-nama="Toyota Alphard VIP"
+                                data-harga="Rp 1.200.000/hari"
+                                onclick="sewaMobil(this)">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Sewa Sekarang
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Akhir Armada Grid -->
+
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         KOMPONEN 5: CTA BANNER (Call To Action Tengah)
+    ============================================================ -->
+    <section class="cta-banner">
+        <div class="container cta-inner">
+            <div class="cta-text">
+                <h2>Siap Memesan Kendaraan Impian Anda?</h2>
+                <p>Hubungi kami sekarang dan dapatkan penawaran spesial. Respons cepat, tidak perlu antri!</p>
+            </div>
+            <a href="https://wa.me/6281263162487?text=Halo%20Tama%20Rent%20Car%2C%20saya%20ingin%20mendapatkan%20penawaran%20spesial%20rental%20mobil." 
+               target="_blank" 
+               class="btn btn-whatsapp btn-lg cta-wa-btn">
+                <i class="fa-brands fa-whatsapp"></i>
+                Chat WhatsApp Sekarang
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         KOMPONEN 6: FOOTER
+         Alamat, navigasi kaki, dan hak cipta
+    ============================================================ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+
+            <!-- Grid Footer: 3 Kolom -->
+            <div class="footer-grid">
+
+                <!-- Kolom 1: Brand & Deskripsi -->
+                <div class="footer-col footer-brand-col">
+                    <a href="#" class="footer-logo">
+                        <i class="fa-solid fa-car-side"></i>
+                        <span>Tama<span class="logo-accent">RentCar</span></span>
+                    </a>
+                    <p class="footer-desc">
+                        Layanan rental mobil premium dan travel terpercaya di Medan. 
+                        Mengutamakan keselamatan, kenyamanan, dan kepuasan pelanggan sejak 2019.
+                    </p>
+                    <!-- Ikon Sosial Media -->
+                    <div class="footer-socials">
+                        <a href="https://wa.me/6281263162487" target="_blank" class="social-link" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Kolom 2: Navigasi Cepat -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navigasi</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Beranda</a></li>
+                        <li><a href="#fitur"><i class="fa-solid fa-chevron-right"></i> Keunggulan</a></li>
+                        <li><a href="#armada"><i class="fa-solid fa-chevron-right"></i> Armada</a></li>
+                        <li><a href="#footer"><i class="fa-solid fa-chevron-right"></i> Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolom 3: Informasi Kontak -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Kontak & Lokasi</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Jl. Medan Marelan, Kota Medan, Sumatera Utara</span>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <a href="https://wa.me/6281263162487" target="_blank">0812-6316-2487</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Senin - Minggu: 07.00 - 22.00 WIB</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>tamarentcar@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Akhir Footer Grid -->
+
+            <!-- Garis Pemisah -->
+            <div class="footer-divider"></div>
+
+            <!-- Copyright Bar -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2026 <span class="text-gradient">Tama Rent Car And Travel</span>. 
+                    Semua Hak Dilindungi. Dibuat dengan <i class="fa-solid fa-heart heart-icon"></i> di Medan.
+                </p>
+                <p class="footer-tagline">Layanan Terpercaya, Perjalanan Tak Terlupakan.</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- ===== TOMBOL SCROLL TO TOP ===== -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Kembali ke atas">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ===== JAVASCRIPT UTAMA ===== -->
+    <script src="script.js"></script>
+
+</body>
+</html>
